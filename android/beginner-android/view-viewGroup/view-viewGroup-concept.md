@@ -221,6 +221,6 @@ Views and ViewGroups form the foundation of Android user interfaces. By choosing
 By understanding the basics of **dp**, **sp**, and screen densities, you can make sure your app's UI remains consistent and responsive.
 
 ---
-#### **Reference**:
+#### Reference:
 1. Dicoding Indonesia
 2. Improved by GPT
