@@ -140,12 +140,6 @@ Run your application to see the changes. It should reflect the new styles and th
 - Ensure your app is compatible with different Android versions by testing themes and styles on various devices.
 - Always check how your app looks in both light and dark modes.
 
-## Conclusion
-
-Congratulations! You've successfully applied styles and themes in your Android application. This not only improves the aesthetic quality of your app but also enhances user experience. 
-
-For further exploration, consider diving deeper into Material Design components, which provide a plethora of design options for creating modern and user-friendly applications.
-
 ### Resources
 
 - [Material Design](https://material.io/design)
