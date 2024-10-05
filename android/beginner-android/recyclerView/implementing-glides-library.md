@@ -3,8 +3,6 @@
 ## Objective
 In this tutorial, you will learn how to implement the Glide library to efficiently load and display images of heroes from the internet in your Android application. Glide is a powerful image loading library that simplifies image handling, including caching and resizing, which helps prevent common memory-related issues like `OutOfMemory` errors. By the end of this tutorial, you'll have a functional app that displays hero images, as shown below:
 
-![Output Example](dos:6bde087cbb4d321e4affd76c5314ee6120230914154656.png)
-
 ## Tutorial Flow
 We'll cover the following steps:
 1. Adding the Glide library dependency in `build.gradle`.
