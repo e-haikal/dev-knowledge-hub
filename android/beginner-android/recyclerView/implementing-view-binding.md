@@ -164,4 +164,7 @@ class ExampleFragment : Fragment() {
 
 View Binding simplifies the way you work with views in your Android applications. By following this guide, you can easily enable and use View Binding in both activities and fragments, leading to cleaner and more maintainable code. Whether you're a beginner or an experienced developer, incorporating View Binding will enhance your development experience.
 
-For more information, check out the official [View Binding Documentation](https://developer.android.com/topic/libraries/view-binding). Happy coding!
+---
+#### Reference:
+1. Dicoding Indonesia
+2. Explained by GPT
