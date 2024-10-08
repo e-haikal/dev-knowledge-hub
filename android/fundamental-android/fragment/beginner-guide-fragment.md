@@ -281,12 +281,10 @@ A dialog fragment is a special type of fragment that displays a floating dialog.
 
    ```xml
    <Button
-      
-
- android:id="@+id/button_show_dialog"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Show Dialog" />
+        android:id="@+id/button_show_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Dialog" />
    ```
 
 ## Calling a Fragment from an Activity
