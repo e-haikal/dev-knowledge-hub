@@ -124,8 +124,6 @@ To load images from the internet, you must enable internet permission in your `A
 ### Step 8: Run Your Application
 After completing all the steps, run your application. You should see the hero images displayed correctly in the RecyclerView.
 
-![Output](dos:bc3fd7ebd96cb781ca07251e7d7b8b5420230630173227.png)
-
 ---
 
 ## Code Breakdown
