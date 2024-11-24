@@ -216,18 +216,7 @@
                 _binding = null
             }
         }
-
         ```
-
-     
-
-
-
-
-
-
-
-
 
 **Lessons Learned:**
 - Ensure that the correct image URI is always passed and displayed in the UI, even in edge cases such as user cancellations. It's important to handle all user interaction cases (like canceling cropping) to maintain a consistent user experience.
