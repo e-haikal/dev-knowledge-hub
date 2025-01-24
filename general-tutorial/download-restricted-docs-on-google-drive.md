@@ -23,33 +23,29 @@ This version is for documents that are in the default **vertical (portrait)** fo
    Copy and paste the following script into the console. This will ensure the PDF is downloaded in the **default vertical format**.
 
    ```javascript
+   allow pasting
+
    let jspdf = document.createElement( "script" );
    jspdf.onload = function () {
-     let pdf = new jsPDF('portrait', 'mm', [210, 297]); // Portrait format (A4)
-     let elements = document.getElementsByTagName( "img" );
-     
-     for ( let i in elements) {
-       let img = elements[i];
-       if (!/^blob:/.test(img.src)) {
-         continue;
-       }
-   
-       let canvasElement = document.createElement( 'canvas' );
-       let con = canvasElement.getContext( "2d" );
-       canvasElement.width = img.width;
-       canvasElement.height = img.height;
-       con.drawImage(img, 0, 0,img.width, img.height);
-       let imgData = canvasElement.toDataURL( "image/jpeg", 1.0);
-       
-       // Add the image to the PDF with correct position and size (A4 portrait size)
-       pdf.addImage(imgData, 'JPEG', 0, 0, 210, 297); // 210x297mm A4 portrait size
-       pdf.addPage();
-     }
-     
-     pdf.save( "download.pdf" );
+   let pdf = new jsPDF();
+   let elements = document.getElementsByTagName( "img" );
+   for ( let i in elements) {
+   let img = elements[i];
+   if (!/^blob:/.test(img.src)) {
+   continue ;
+   }
+   let canvasElement = document.createElement( 'canvas' );
+   let con = canvasElement.getContext( "2d" );
+   canvasElement.width = img.width;
+   canvasElement.height = img.height;
+   con.drawImage(img, 0, 0,img.width, img.height);
+   let imgData = canvasElement.toDataURL( "image/jpeg" , 1.0);
+   pdf.addImage(imgData, 'JPEG' , 0, 0);
+   pdf.addPage();
+   }
+   pdf.save( "download.pdf" );
    };
-   
-   jspdf.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js';
+   jspdf.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js' ;
    document.body.appendChild(jspdf);
    ```
 
