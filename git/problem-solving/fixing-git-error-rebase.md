@@ -123,5 +123,3 @@ If you want to **start over** from `main` (i.e., discard everything in `branch-h
 ### Important Notes:
 - **Force Push:** Both `git reset --hard` and `git rebase` might require a `--force-with-lease` push, because you're rewriting the commit history of your local branch.
 - **Check for Uncommitted Changes:** If you have uncommitted changes, either stash them or commit them before resetting or rebasing.
-
-Let me know if this clears things up or if you have more specific questions!
